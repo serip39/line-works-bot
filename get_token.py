@@ -103,7 +103,7 @@ def send_message(access_token):
         "accountId": "yuki_seri@ranger",
         "content": {
             "type": "text",
-            "text": "Hello WOrld",
+            "text": "Hello World",
         }
     }
     api(url, payload, access_token)
