@@ -19,6 +19,7 @@ SERVER_API_CONSUMER_KEY = ""
 SERVER_LIST_ID = ""
 SERVER_LIST_PRIVATEKEY = ""
 BOT_NO = ""
+LINE_ID = ""
 
 def create_jwt():
     iat = int(datetime.now().timestamp())
@@ -100,7 +101,7 @@ def register_domain(access_token):
 def send_message(access_token):
     url = 'https://apis.worksmobile.com/r/' + API_ID + '/message/v1/bot/' + BOT_NO + '/message/push'
     payload = {
-        "accountId": "yuki_seri@ranger",
+        "accountId": LINE_ID,
         "content": {
             "type": "text",
             "text": "Hello World",
